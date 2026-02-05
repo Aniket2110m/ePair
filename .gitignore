@@ -1,0 +1,65 @@
+# Laravel & Backend
+/Backend/vendor/
+/Backend/node_modules/
+/Backend/.env
+/Backend/storage/*.key
+/Backend/storage/logs/
+/Backend/storage/framework/cache/
+/Backend/storage/framework/sessions/
+/Backend/storage/framework/views/
+/Backend/storage/debugbar/
+/Backend/bootstrap/cache/
+/Backend/public/storage
+/Backend/public/hot
+*.log
+
+# Flutter & Frontend
+/Frontend/User app and web/.dart_tool/
+/Frontend/User app and web/.flutter-plugins
+/Frontend/User app and web/.flutter-plugins-dependencies
+/Frontend/User app and web/.packages
+/Frontend/User app and web/.pub-cache/
+/Frontend/User app and web/.pub/
+/Frontend/User app and web/build/
+/Frontend/User app and web/.gradle/
+/Frontend/User app and web/android/.gradle/
+/Frontend/User app and web/android/local.properties
+/Frontend/User app and web/android/app/google-services.json
+/Frontend/User app and web/ios/Flutter/Flutter.framework
+/Frontend/User app and web/ios/Flutter/Flutter.podspec
+/Frontend/User app and web/ios/Pods/
+/Frontend/User app and web/ios/.symlinks/
+/Frontend/User app and web/pubspec.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Compiled files
+*.class
+*.jar
+*.war
+*.ear
+*.apk
+*.ap_
+*.dex
+
+# System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# macOS
+__MACOSX/
