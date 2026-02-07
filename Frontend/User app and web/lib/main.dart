@@ -31,12 +31,14 @@ Future<void> main() async {
       version: "v15.0",
     );
   }else{
-    await Firebase.initializeApp();
+    // Firebase disabled for mobile - uncomment when google-services.json is configured
+    // await Firebase.initializeApp();
   }
 
-  if(defaultTargetPlatform == TargetPlatform.android) {
-    await FirebaseMessaging.instance.requestPermission();
-  }
+  // Firebase Messaging disabled - uncomment when Firebase is configured
+  // if(defaultTargetPlatform == TargetPlatform.android) {
+  //   await FirebaseMessaging.instance.requestPermission();
+  // }
 
 
 
@@ -49,12 +51,13 @@ Future<void> main() async {
       path =  await initDynamicLinks();
     }
 
-    final RemoteMessage? remoteMessage = await FirebaseMessaging.instance.getInitialMessage();
-    if (remoteMessage != null) {
-      body = NotificationHelper.convertNotification(remoteMessage.data);
-    }
+    // Firebase Messaging disabled - uncomment when Firebase is configured
+    // final RemoteMessage? remoteMessage = await FirebaseMessaging.instance.getInitialMessage();
+    // if (remoteMessage != null) {
+    //   body = NotificationHelper.convertNotification(remoteMessage.data);
+    // }
     await NotificationHelper.initialize(flutterLocalNotificationsPlugin);
-    FirebaseMessaging.onBackgroundMessage(myBackgroundMessageHandler);
+    // FirebaseMessaging.onBackgroundMessage(myBackgroundMessageHandler);
   }catch(e) {
     if (kDebugMode) {
       print("");

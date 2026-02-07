@@ -5,7 +5,7 @@ class AppConstants {
 
   static const String appName = 'sPair';
   static const String appVersion = '3.2'; /// Flutter SDK : 3.29.3
-  static const String baseUrl = 'http://127.0.0.1:8000';
+  static const String baseUrl = 'http://192.168.29.100:8000';
   static const bool avoidMaintenanceMode = false;
   static const LocalCachesTypeEnum cachesType = LocalCachesTypeEnum.all;
   static const String categoryUrl = '/api/v1/customer/category?limit=20';

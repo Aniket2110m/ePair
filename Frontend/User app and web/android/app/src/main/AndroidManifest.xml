@@ -33,7 +33,7 @@
 
 
         <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_MAP_KEY"/>
+            android:value="AIzaSyBH3EBYDvKuRNwomk1MObvWJM2RwfnL1P0"/>
 
         <provider
             android:name="com.pichillilorenzo.flutter_inappwebview_android.InAppWebViewFileProvider"
