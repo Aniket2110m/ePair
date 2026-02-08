@@ -1,5 +1,5 @@
 name: demandium
-description: A new Flutter application.
+description: ePair - Fast & fair, electronics repair service booking application
 publish_to: 'none' #
 version: 1.0.8+11
 
@@ -87,6 +87,14 @@ dev_dependencies:
   flutter_lints: ^4.0.0
   drift_dev: ^2.19.0
   build_runner: ^2.4.13
+  flutter_launcher_icons: ^0.14.2
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
+  adaptive_icon_background: "#ffffff"
+  adaptive_icon_foreground: "assets/images/app_icon.png"
 
 flutter:
   uses-material-design: true

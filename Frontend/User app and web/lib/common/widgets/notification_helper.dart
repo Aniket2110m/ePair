@@ -317,7 +317,7 @@ class NotificationHelper {
 
   static Future<void> showTextNotification(String title, String? body, String orderID, FlutterLocalNotificationsPlugin fln) async {
     const AndroidNotificationDetails androidPlatformChannelSpecifics = AndroidNotificationDetails(
-      'demandium', 'demandium', playSound: true,
+      'ePair', 'ePair', playSound: true,
       importance: Importance.max, priority: Priority.max, sound: RawResourceAndroidNotificationSound('notification'),
     );
     int randomNumber = Random().nextInt(100);
@@ -332,7 +332,7 @@ class NotificationHelper {
     );
     if(!Get.find<AuthController>().isNotificationActive()){
       AndroidNotificationDetails androidPlatformChannelSpecifics = AndroidNotificationDetails(
-        "demandiumWithoutsound","demandium without sound", channelDescription:"description",
+        "ePairWithoutsound","ePair without sound", channelDescription:"ePair silent notifications",
         playSound: false,
         importance: Importance.max,
         styleInformation: bigTextStyleInformation, priority: Priority.max,
@@ -346,7 +346,7 @@ class NotificationHelper {
     }
     else {
       AndroidNotificationDetails androidPlatformChannelSpecifics = AndroidNotificationDetails(
-        "demandium", 'demandium with sound', channelDescription:"description",
+        "ePair", 'ePair with sound', channelDescription:"ePair notifications",
         playSound: true,
         sound: const RawResourceAndroidNotificationSound('notification'),
         importance: Importance.max,
@@ -368,7 +368,7 @@ class NotificationHelper {
     );
     if(!Get.find<AuthController>().isNotificationActive()){
       AndroidNotificationDetails androidPlatformChannelSpecifics = AndroidNotificationDetails(
-        "demandiumWithoutsound","demandium without sound", channelDescription:"description",
+        "ePairWithoutsound","ePair without sound", channelDescription:"ePair silent notifications",
         playSound: false,
         largeIcon: FilePathAndroidBitmap(largeIconPath), priority: Priority.max,
         styleInformation: bigPictureStyleInformation, importance: Importance.max,
@@ -379,7 +379,7 @@ class NotificationHelper {
 
     }else{
       AndroidNotificationDetails androidPlatformChannelSpecifics = AndroidNotificationDetails(
-        "demandium", 'demandium with sound', channelDescription:"description",
+        "ePair", 'ePair with sound', channelDescription:"ePair notifications",
         playSound: true,
         sound: const RawResourceAndroidNotificationSound('notification'),
         largeIcon: FilePathAndroidBitmap(largeIconPath), priority: Priority.max,

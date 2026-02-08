@@ -24,7 +24,7 @@
     </queries>
 
     <application
-        android:label="Demandium"
+        android:label="ePair"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
         android:extractNativeLibs="true"
@@ -75,7 +75,7 @@
                 />
             <meta-data
                 android:name="com.google.firebase.messaging.default_notification_channel_id"
-                android:value="demandiumWithoutsound" />
+                android:value="ePairWithoutsound" />
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
